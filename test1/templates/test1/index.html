@@ -1,0 +1,101 @@
+
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <title>Dream city Construction and real Estate</title>
+        <link rel="stylesheet" href="{% static 'test1/style.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> 
+    </head>
+    <body>
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Dream City Constructions & Real Estate</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-angle-down"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="{% url 'test1:test1_view2' %}">About us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="#" >Contact</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+            
+        </section>
+
+        <section id="banner">
+        <div class="container">   
+        <div class="row">     
+        <div class="col-md-6">
+        <p class="promo_title">Remember us for Construction and Real Estate</p>
+        <p>We provide quick, efficient and economic 
+        but still reliable services for your problems.</p>
+        <a class="contact-homepg" href="" ><i class="fas fa-phone-volume"></i>Contact us now!</a>
+        </div>
+        <div class="col-md-6 text-center">
+        <img  src="{% static 'test1/img3161.jpg'%}" class="img1">
+         </div>
+        </div>
+        </div>
+     
+        <img  src="{% static 'test1/6754.png' %}" class="wave" >
+        </section>
+
+
+
+
+
+
+
+        <section id="services">
+         
+        <div class="container">
+                 <p class="font">Our Services</p>
+            <div class="row">
+            <div class="col-md-4">
+            <div class="forcenter">
+            <h4 class="ser-tit">Constructions</h4>
+            <img src="{% static 'test1/construction.png' %}" class="ser-img">
+            <p>We provide quick, efficient and economic 
+             but still reliable services for your problems.</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="forcenter">
+            <h4 class="ser-tit">Real Estate Services</h4>
+            <img src="{% static 'test1/rea.png'%}" class="ser-img">
+            <p>We provide quick, efficient and economic 
+             but still reliable services for your problems.</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+
+            <div class="forcenter">
+            <h4 class="ser-tit">Interior Design</h4>
+            <img src="{% static 'test1/inti.png' %}" class="ser-img">
+            <p>We provide quick, efficient and economic 
+             but still reliable services for your problems.</p>
+            </div>
+            </div>
+           
+            </div>
+           </div>
+        </section>
+    </body>
+</html>
